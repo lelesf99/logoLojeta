@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lojeta</title>
+	<style type="text/css">
+		body{
+			box-sizing: 0;
+			margin: 0;
+			padding: 0;
+		}
+		svg{
+			box-sizing: 0;
+			margin: 0;
+			padding: 0;
+		}
+		@keyframes anim{
+			0%{
+				background-position: top;  
+			}
+			100%{
+				background-position: bottom;
+			}
+		}
+		@keyframes animVect{
+			0%{
+				stroke-dasharray: 1600;
+			}
+			100%{
+				stroke-dasharray: 200;
+			}
+		}
+
+		#logo{
+			width: 80vw;
+			height: 80vh;
+			background: white;
+			mix-blend-mode: screen;
+		}
+		#sun,#lojeta{
+			animation: animVect;
+			animation-duration: 10s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			fill: black;
+		}
+		#background{
+			width: 80vw;
+			height: 80vh;
+			position: fixed;
+			left: 10%;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(173,255,0,1) 20%, rgba(23,233,93,1) 40%, rgba(0,100,255,1) 60%, rgba(205,0,255,1) 80%, rgba(255,0,0,1) 100%); 
+			background-blend-mode: normal;
+			background-size: 100% 1000%;
+			animation: anim;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+	</style>
+</head>
+<body>
+	<div id="background">
+		<svg id="logo" width="878" height="580" viewBox="0 0 878 580" fill="none" stroke="#222" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+		<path id="sun" vector-effect="non-scaling-stroke" stroke-width="3" fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M735.513 417C737.469 411.404 739.272 405.736 740.915 400H138.085C139.728 405.736 141.531 411.404 143.487 417H735.513ZM749.866 358C748.812 365.42 747.497 372.757 745.933 380H133.067C131.503 372.757 130.188 365.42 129.134 358H749.866ZM752.057 338C752.618 330.733 752.932 323.397 752.99 316H126.01C126.068 323.397 126.382 330.733 126.943 338H752.057ZM752.52 296C743.441 130.999 606.769 0 439.5 0C272.231 0 135.559 130.999 126.48 296H752.52Z"/>
+		<path id="lojeta" vector-effect="non-scaling-stroke" stroke-width="3" stroke="#222" stroke-linecap="round" fill="#fff" d="M0.400001 580V435.8H31.4V548.8H144.4V580H0.400001ZM175.259 580C167.126 580 160.126 577.133 154.259 571.4C148.526 565.533 145.659 558.533 145.659 550.4V465.6C145.659 457.467 148.526 450.533 154.259 444.8C160.126 438.933 167.126 436 175.259 436H260.059C268.059 436 274.993 438.933 280.859 444.8C286.726 450.533 289.659 457.467 289.659 465.6V550.4C289.659 558.533 286.726 565.533 280.859 571.4C274.993 577.133 268.059 580 260.059 580H175.259ZM183.259 548.8H251.659C256.059 548.8 258.259 548.8 258.259 548.8C258.259 548.8 258.259 546.6 258.259 542.2V473.8C258.259 469.4 258.259 467.2 258.259 467.2C258.259 467.2 256.059 467.2 251.659 467.2H183.259C178.859 467.2 176.659 467.2 176.659 467.2C176.659 467.2 176.659 469.4 176.659 473.8V542.2C176.659 546.6 176.659 548.8 176.659 548.8C176.659 548.8 178.859 548.8 183.259 548.8ZM320.884 580C312.751 580 305.751 577.133 299.884 571.4C294.151 565.533 291.284 558.533 291.284 550.4V531.8H322.284V542.2C322.284 546.6 322.284 548.8 322.284 548.8C322.284 548.8 324.484 548.8 328.884 548.8H397.284C401.684 548.8 403.884 548.8 403.884 548.8C403.884 548.8 403.884 546.6 403.884 542.2V436H435.284V550.4C435.284 558.533 432.351 565.533 426.484 571.4C420.618 577.133 413.684 580 405.684 580H320.884ZM448.139 580V436H581.139V467.2H479.539V492.4H561.339V523.6H479.539V548.8H581.139V580H448.139ZM640.064 580V467.2H583.664V436H727.664V467.2H671.264V580H640.064ZM733.022 580V465.6C733.022 457.467 735.889 450.533 741.622 444.8C747.489 438.933 754.489 436 762.622 436H847.222C855.355 436 862.355 438.933 868.222 444.8C874.089 450.533 877.022 457.467 877.022 465.6V580H845.622V533.6H764.022V580H733.022ZM764.022 502.4H845.622V473.8C845.622 469.4 845.622 467.2 845.622 467.2C845.622 467.2 843.422 467.2 839.022 467.2H770.622C766.222 467.2 764.022 467.2 764.022 467.2C764.022 467.2 764.022 469.4 764.022 473.8V502.4Z"/>
+		</svg>
+	</div>
+	
+</body>
+</html>
